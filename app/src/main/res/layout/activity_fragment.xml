@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityFragment">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:tooltipText="@string/app_name"
+        android:gravity="center"
+        android:id="@+id/top">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:entries="@array/top1" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="173dp"
+            android:entries="@array/top2"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top"
+            android:orientation="vertical">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/looper_pager_2"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="center"
+                    android:background="#33000000"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@+id/lin_tou">
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="图片标题"
+                        android:textColor="@android:color/white" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:id="@+id/dot_0"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="2dip"
+                            android:layout_marginRight="2dip"
+                            android:background="@drawable/dot_yes"
+                            />
+
+                        <View
+                            android:id="@+id/dot_1"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="2dip"
+                            android:layout_marginRight="2dip"
+                            android:background="@drawable/dot_no"/>
+                        <View
+                            android:id="@+id/dot_2"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="2dip"
+                            android:layout_marginRight="2dip"
+                            android:background="@drawable/dot_no"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1350dp"
+                    android:layout_below="@id/lin_tou"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/activity_listView"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

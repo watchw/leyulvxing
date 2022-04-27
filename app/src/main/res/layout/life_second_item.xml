@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/huoguo1"
+        android:id="@+id/life_second_img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="巴蜀打火锅（重庆店）"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/life_second_img"
+        android:id="@+id/life_second_text_title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/life_second_img"
+        android:layout_below="@+id/life_second_text_title"
+        android:id="@+id/life_second_text_content"
+        android:layout_marginTop="50dp"
+        android:text="靖江区      火锅" />
+</RelativeLayout>

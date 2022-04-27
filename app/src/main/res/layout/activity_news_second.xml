@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".news_second">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_second_title1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="原名龙隐镇，国家AAAA级景区"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_second_title2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/news_second_title1"
+            android:textSize="15sp"
+            android:text="景点介绍"/>
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/news_second_title2"
+            android:background="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/darkgray"
+                android:text="摘要：   磁器口古镇，中国历史文化名街，重庆市重点保护传统街,重庆“新巴渝十二景”，巴渝民俗文化旅游圈。"/>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="    磁器口古镇，原名龙隐镇  ，国家AAAA级景区，中国历史文化名街，重庆市重点保护传统街，重庆“新巴渝十二景”，巴渝民俗文化旅游圈。磁器口古镇位于重庆市沙坪坝区嘉陵江畔，始建于宋代，拥有“一江两溪三山四街”的独特地貌，形成天然良港，是嘉陵江边重要的水陆码头。
+磁器口古镇，曾经“白日里千人拱手，入夜后万盏明灯”繁盛一时。巴渝文化、宗教文化、沙磁文化、红岩文化和民间文化，各具特色。一条石板路，千年磁器口，是重庆古城的缩影和象征，被赞誉为“小重庆”，磁器口古镇开发有榨油、抽丝、制糖、捏面人、川戏等传统表演项目和各种传统小吃、茶馆等，每年春节举办的磁器口庙会是最具特色的传统活动，吸引数万市民前往参与。"/>
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_marginTop="100dp"
+                android:layout_height="wrap_content"
+                android:text="收    藏"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@color/green_pressed"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+<!--            <androidx.viewpager.widget.ViewPager-->
+<!--                android:id="@+id/looper_pager_one"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="240dp"/>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="0dp">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="35dip"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="#33F0E2E2"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:id="@+id/lin_tou">-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/title"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="图片标题"-->
+<!--                        android:textColor="@android:color/black" />-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal" >-->
+
+<!--                        <View-->
+<!--                            android:id="@+id/dot_0"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="25dp"-->
+<!--                            android:layout_marginLeft="2dip"-->
+<!--                            android:layout_marginRight="2dip"-->
+<!--                            android:background="@drawable/dot_yes"-->
+<!--                            />-->
+
+<!--                        <View-->
+<!--                            android:id="@+id/dot_1"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="25dp"-->
+<!--                            android:layout_marginLeft="2dip"-->
+<!--                            android:layout_marginRight="2dip"-->
+<!--                            android:background="@drawable/dot_no"/>-->
+<!--                        <View-->
+<!--                            android:id="@+id/dot_2"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="25dp"-->
+<!--                            android:layout_marginLeft="2dip"-->
+<!--                            android:layout_marginRight="2dip"-->
+<!--                            android:background="@drawable/dot_no"/>-->
+
+<!--                    </LinearLayout>-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/lin_tou"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:id="@+id/huodong"-->
+<!--                    android:orientation="horizontal">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:text="热门活动      "/>-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:text="popular Activists"/>-->
+<!--                </LinearLayout>-->
+<!--                <ListView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="1350dp"-->
+<!--                    android:layout_below="@id/huodong"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:id="@+id/home_listView"/>-->
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+</LinearLayout>

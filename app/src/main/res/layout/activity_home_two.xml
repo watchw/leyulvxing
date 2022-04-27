@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_activity_two">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text1"
+            android:text="        关于山城”重庆“的冷知识你知道几个？"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            tools:ignore="InvalidId" />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/text1"-->
+<!--            android:id="@+id/text2"-->
+<!--            android:text="         重庆市简称巴、渝，别称山城、雾都、桥都，是中华人民共和国直辖市，总面积8.24万平方千米，常住人口为3205.42万人。重庆是国家中心城市、中国内陆金融中心、长江中上游航运中心。"-->
+<!--            android:textSize="18dp"-->
+<!--            tools:ignore="InvalidId" />-->
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/text2"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:id="@+id/img1"-->
+<!--            android:src="@drawable/cqguihua"/>-->
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/home_activity_two_list"/>
+</RelativeLayout>
