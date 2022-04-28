@@ -1,9 +1,10 @@
-package com.example.qimo;
+package com.example.qimo.Life;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+
+import com.example.qimo.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 

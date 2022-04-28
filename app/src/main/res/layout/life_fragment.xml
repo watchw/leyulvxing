@@ -1,279 +1,324 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        android:id="@+id/life_l1">
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/life_l1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/life_l1_text">
-            <TextView
-                android:layout_width="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/life_l1_text"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="娱乐休闲      "/>
-            <TextView
-                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="娱乐休闲"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/life_l1_btn1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:text="Amusement"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:id="@+id/life_l1_btn1">
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
                 <Button
-                    android:layout_width="120dp"
+                    android:id="@+id/life_btn_canting"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
+                    android:layout_weight="1"
                     android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
-                    android:drawablePadding="-15dp"
                     android:drawableTop="@mipmap/canting"
-                    android:text="餐厅"
-                    android:id="@+id/life_btn_canting"/>
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="餐厅" />
+
                 <Button
-                    android:layout_width="120dp"
+                    android:id="@+id/life_btn_jiudian"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
+                    android:layout_weight="1"
                     android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
-                    android:drawablePadding="-15dp"
                     android:drawableTop="@mipmap/jiudian"
-                    android:text="酒店"
-                    android:id="@+id/life_btn_jiudian"/>
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="酒店" />
 
                 <Button
-                    android:layout_width="120dp"
+                    android:id="@+id/life_btn_dianying"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
+                    android:layout_weight="1"
                     android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
-                    android:drawablePadding="-15dp"
                     android:drawableTop="@mipmap/dianying"
-                    android:text="热映电影"
-                    android:id="@+id/life_btn_dianying"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/life_l1_btn2">
-                <Button
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
                     android:drawablePadding="-15dp"
-                    android:drawableTop="@mipmap/youleyuan"
+                    android:paddingTop="5dp"
+                    android:text="热映电影" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/life_l1_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
                     android:id="@+id/life_btn_youleyuan"
-                    android:text="游乐园"/>
-                <Button
-                    android:layout_width="120dp"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
+                    android:layout_weight="1"
                     android:layout_gravity="center"
                     android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
+                    android:drawableTop="@mipmap/youleyuan"
                     android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="游乐园" />
+
+                <Button
+                    android:id="@+id/life_btn_gongyuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_1"
                     android:drawableTop="@mipmap/gongyuan"
-                    android:text="公园"
-                    android:id="@+id/life_btn_gongyuan"/>
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="公园" />
+
                 <Button
-                    android:layout_width="120dp"
+                    android:id="@+id/life_btn_yinpin"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
+                    android:layout_weight="1"
                     android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
-                    android:drawablePadding="-15dp"
                     android:drawableTop="@mipmap/yinpin"
-                    android:text="饮品"
-                    android:id="@+id/life_btn_yinpin"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            android:id="@+id/life_l2_text">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="生活服务      "/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:text="Life Service"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:id="@+id/life_l2_btn1">
-                <Button
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
                     android:drawablePadding="-15dp"
-                    android:drawableTop="@mipmap/chaoshi"
+                    android:paddingTop="5dp"
+                    android:text="饮品" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/life_l2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生活服务"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/life_l2_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/life_btn_chaoshi"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
-                    android:text="超市"
-                    android:id="@+id/life_btn_chaoshi"/>
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_1"
+                    android:drawableTop="@mipmap/chaoshi"
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="超市" />
 
                 <Button
-                    android:layout_width="120dp"
+                    android:id="@+id/life_btn_yiyuan"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
+                    android:layout_weight="1"
                     android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
-                    android:drawablePadding="-15dp"
                     android:drawableTop="@mipmap/yiyuan"
-                    android:text="医院"
-                    android:id="@+id/life_btn_yiyuan"/>
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="医院" />
 
                 <Button
-                    android:layout_width="120dp"
+                    android:id="@+id/life_btn_jiaxiao"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
+                    android:layout_weight="1"
                     android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
-                    android:drawablePadding="-15dp"
                     android:drawableTop="@mipmap/jiaxiao"
-                    android:text="驾校"
-                    android:id="@+id/life_btn_jiaxiao"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/life_l2_btn2">
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="驾校" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/life_l2_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <Button
-                    android:layout_width="120dp"
+                    android:id="@+id/life_btn_hunsha"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
+                    android:layout_weight="1"
                     android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
-                    android:drawablePadding="-15dp"
                     android:drawableTop="@mipmap/hunsha"
-                    android:text="婚纱摄影"
-                    android:id="@+id/life_btn_hunsha"/>
-                <Button
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
                     android:drawablePadding="-15dp"
-                    android:drawableTop="@mipmap/xuexiao"
-                    android:text="学校"
-                    android:id="@+id/life_btn_xuexiao"/>
-                <Button
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/btn_1"
                     android:paddingTop="5dp"
-                    android:drawablePadding="-15dp"
-                    android:drawableTop="@mipmap/kuaidi"
-                    android:text="快递"
-                    android:id="@+id/life_btn_kuaidi"/>
+                    android:text="婚纱摄影" />
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            android:id="@+id/life_l3_text">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="家政服务      "/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:text="House Keeping"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:id="@+id/life_l3_btn1">
                 <Button
-                    android:layout_width="120dp"
+                    android:id="@+id/life_btn_xuexiao"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
+                    android:layout_weight="1"
                     android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
+                    android:drawableTop="@mipmap/xuexiao"
                     android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="学校" />
+
+                <Button
+                    android:id="@+id/life_btn_kuaidi"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_1"
+                    android:drawableTop="@mipmap/kuaidi"
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="快递" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/life_l3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家政服务"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/life_l3_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/life_btn_qici"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_1"
                     android:drawableTop="@mipmap/qici"
-                    android:text="汽车服务"
-                    android:id="@+id/life_btn_qici"/>
-                <Button
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
                     android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="汽车服务" />
+
+                <Button
+                    android:id="@+id/life_btn_banjia"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_1"
                     android:drawableTop="@mipmap/banjia"
-                    android:text="搬家"
-                    android:id="@+id/life_btn_banjia"/>
-                <Button
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
                     android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="搬家" />
+
+                <Button
+                    android:id="@+id/life_btn_xiyi"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_1"
                     android:drawableTop="@mipmap/xiyi"
-                    android:text="家政洗衣"
-                    android:id="@+id/life_btn_xiyi"/>
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="家政洗衣" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/life_l3_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/life_btn_hunsha2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_1"
+                    android:drawableTop="@mipmap/hunsha"
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="婚纱摄影" />
+
+                <Button
+                    android:id="@+id/life_btn_xuexiao2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_1"
+                    android:drawableTop="@mipmap/xuexiao"
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="学校" />
+
+                <Button
+                    android:id="@+id/life_btn_kuaidi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_1"
+                    android:drawableTop="@mipmap/kuaidi"
+                    android:drawablePadding="-15dp"
+                    android:paddingTop="5dp"
+                    android:text="快递" />
+            </LinearLayout>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/life_l3_btn2">
-            <Button
-                android:layout_width="120dp"
-                android:layout_height="100dp"
-                android:background="@drawable/btn_1"
-                android:paddingTop="5dp"
-                android:drawablePadding="-15dp"
-                android:drawableTop="@mipmap/hunsha"
-                android:text="婚纱摄影"
-                android:id="@+id/life_btn_hunsha2"/>
-            <Button
-                android:layout_width="120dp"
-                android:layout_height="100dp"
-                android:background="@drawable/btn_1"
-                android:paddingTop="5dp"
-                android:drawablePadding="-15dp"
-                android:drawableTop="@mipmap/xuexiao"
-                android:text="学校"
-                android:id="@+id/life_btn_xuexiao2"/>
-            <Button
-                android:layout_width="120dp"
-                android:layout_height="100dp"
-                android:background="@drawable/btn_1"
-                android:paddingTop="5dp"
-                android:drawablePadding="-15dp"
-                android:drawableTop="@mipmap/kuaidi"
-                android:text="快递"
-                android:id="@+id/life_btn_kuaidi2"/>
-        </LinearLayout>
-    </LinearLayout>
     </ScrollView>
 </RelativeLayout>

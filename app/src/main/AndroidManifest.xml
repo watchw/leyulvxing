@@ -32,7 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".life_second" />
+        <activity android:name=".Life.life_second" />
     </application>
 
 </manifest>
