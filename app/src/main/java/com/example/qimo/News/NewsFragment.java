@@ -16,7 +16,7 @@ import com.example.qimo.SceneryFgAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class NewsFragment extends Fragment {
-    private String[] tabletitle={
+    private String[] tabletitle = {
             "热点",
             "本地",
             "专题"
@@ -24,6 +24,7 @@ public class NewsFragment extends Fragment {
     private TabLayout tableLayout;
     private ViewPager viewPager;
     private View nview;
+
     public static NewsFragment newInstance() {
         return new NewsFragment();
     }
@@ -31,9 +32,9 @@ public class NewsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        nview=inflater.inflate(R.layout.news_fragment, null);
-        viewPager=(ViewPager)nview.findViewById(R.id.viewPager001);
-        tableLayout=(TabLayout) nview.findViewById(R.id.tab_layout);
+        nview = inflater.inflate(R.layout.news_fragment, null);
+        viewPager = (ViewPager) nview.findViewById(R.id.viewPager001);
+        tableLayout = (TabLayout) nview.findViewById(R.id.tab_layout);
         SceneryFgAdapter sceneryFgAdapter = new SceneryFgAdapter(getChildFragmentManager(), tabletitle);
         viewPager.setAdapter(sceneryFgAdapter);
         //tablayout绑定viewpager

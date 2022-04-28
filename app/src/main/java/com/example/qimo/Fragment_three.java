@@ -15,9 +15,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
+import com.example.qimo.News.New_ThreeActivity;
+import com.example.qimo.News.news_second;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -119,12 +121,12 @@ public class Fragment_three extends Fragment {
             switch (position){
                 case 0:
                     Intent intent=new Intent();
-                    intent.setClass(getActivity(),news_second.class);
+                    intent.setClass(getActivity(), news_second.class);
                     startActivity(intent);
                     break;
                 case 1:
                     Intent intent1=new Intent();
-                    intent1.setClass(getActivity(),New_ThreeActivity.class);
+                    intent1.setClass(getActivity(), New_ThreeActivity.class);
                     startActivity(intent1);
                     break;
             }
