@@ -1,6 +1,7 @@
 package com.example.qimo.Tools;
 
 import com.example.qimo.Model.Banner;
+import com.example.qimo.Model.Life;
 import com.example.qimo.Model.ScenicSpot;
 import com.example.qimo.R;
 
@@ -101,6 +102,50 @@ public class DataTools {
             scenicSpot.subtitle = "抗战胜利纪功碑暨人民解放纪念碑，又名“抗战胜利纪功碑”......";
             scenicSpot.img = R.drawable.jiefangbei;
             list.add(scenicSpot);
+        }
+        return list;
+    }
+
+    public static ArrayList<Life> getLifes(int tag) {
+        ArrayList<Life> list = new ArrayList<Life>();
+        if (tag == 0) {
+            if (true) {
+                Life life = new Life();
+                life.img = R.drawable.huoguo1;
+                life.title = "巴蜀打火锅（重庆店）";
+                life.subtitle = "靖江区      火锅";
+                list.add(life);
+            }
+            if (true) {
+                Life life = new Life();
+                life.img = R.drawable.huoguo1;
+                life.title = "巴蜀打火锅（重庆店）";
+                life.subtitle = "靖江区      火锅";
+                list.add(life);
+            }
+            if (true) {
+                Life life = new Life();
+                life.img = R.drawable.huoguo1;
+                life.title = "巴蜀打火锅（重庆店）";
+                life.subtitle = "靖江区      火锅";
+                list.add(life);
+            }
+            if (true) {
+                Life life = new Life();
+                life.img = R.drawable.huoguo1;
+                life.title = "巴蜀打火锅（重庆店）";
+                life.subtitle = "靖江区      火锅";
+                list.add(life);
+            }
+            if (true) {
+                Life life = new Life();
+                life.img = R.drawable.huoguo1;
+                life.title = "巴蜀打火锅（重庆店）";
+                life.subtitle = "靖江区      火锅";
+                list.add(life);
+            }
+        } else if (tag == 1) {
+
         }
         return list;
     }
