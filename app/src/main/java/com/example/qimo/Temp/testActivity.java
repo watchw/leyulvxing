@@ -1,6 +1,8 @@
-package com.example.qimo;
+package com.example.qimo.Temp;
 
 import android.os.Bundle;
+
+import com.example.qimo.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;

@@ -1,4 +1,4 @@
-package com.example.qimo;
+package com.example.qimo.Mine;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

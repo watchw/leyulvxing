@@ -21,7 +21,6 @@ import android.widget.Toast;
 import com.example.qimo.Tools.DBOpenHelper;
 import com.example.qimo.MainActivity;
 import com.example.qimo.R;
-import com.example.qimo.SavePath;
 import com.example.qimo.Model.User;
 import com.example.qimo.user_second;
 

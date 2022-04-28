@@ -21,10 +21,9 @@
         <activity android:name=".Home.home_activity_two" />
         <activity android:name=".Home.home_activity_one" /> <!-- <activity android:name=".HomeActivityOne" /> -->
         <activity android:name=".News.New_ThreeActivity" />
-        <activity android:name=".days" />
         <activity android:name=".user_second" />
         <activity android:name=".News.news_second" />
-        <activity android:name=".activity_second" />
+        <activity android:name=".Promotion.activity_second" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

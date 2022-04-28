@@ -1,4 +1,4 @@
-package com.example.qimo;
+package com.example.qimo.Promotion;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,8 @@ import android.widget.Gallery;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.ViewSwitcher;
+
+import com.example.qimo.R;
 
 public class activity_second extends AppCompatActivity {
     //画廊

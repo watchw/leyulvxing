@@ -1,4 +1,8 @@
-package com.example.qimo;
+package com.example.qimo.News;
+
+import com.example.qimo.Fragment_one;
+import com.example.qimo.Fragment_three;
+import com.example.qimo.Fragment_two;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;

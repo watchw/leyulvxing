@@ -1,4 +1,4 @@
-package com.example.qimo;
+package com.example.qimo.Model;
 
 import androidx.lifecycle.ViewModel;
 

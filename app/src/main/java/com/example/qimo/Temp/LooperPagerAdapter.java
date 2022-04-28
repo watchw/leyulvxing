@@ -1,4 +1,4 @@
-package com.example.qimo;
+package com.example.qimo.Temp;
 
 import android.view.View;
 import android.view.ViewGroup;

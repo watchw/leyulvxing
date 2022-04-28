@@ -22,11 +22,11 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.qimo.Login.LoginActivity;
 import com.example.qimo.Model.Banner;
 import com.example.qimo.Model.ScenicSpot;
 import com.example.qimo.R;
 import com.example.qimo.Tools.DataTools;
+import com.example.qimo.Promotion.activity_second;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -78,7 +78,6 @@ public class HomeFragment extends Fragment {
     private ViewPagerAdapter adapter;
     private ScheduledExecutorService scheduledExecutorService;
 
-    private View mView;
     //轮播图
     private List<ImageView> images;
     private List<View> dots;
@@ -130,6 +129,9 @@ public class HomeFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.i("position", String.valueOf(position));
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), activity_second.class);
+                startActivity(intent);
             }
         });
     }
