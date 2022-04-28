@@ -5,23 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home.home_activity_one">
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:id="@+id/textView"
-        android:text="                                  常用电话"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        />
-    <ListView
-        android:layout_below="@+id/textView"
-        android:layout_width="wrap_content"
-        android:id="@+id/home_activity_one_list"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        />
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="常用电话"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:textSize="16sp" />
 
-
+    <ListView
+        android:id="@+id/home_activity_one_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView" />
 
 </RelativeLayout>

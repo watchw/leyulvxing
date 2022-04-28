@@ -3,6 +3,9 @@ package com.example.qimo.Home;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -24,16 +27,11 @@ public class home_activity_one extends AppCompatActivity {
             "短信报警号码",
             "非紧急救助中心",
             "职务犯罪举报 ",
-            "                                  投诉举报",
-
-
             "消费者投诉热线 ",
             "价格投诉热线 ",
             "质量投诉",
             "法律援助",
             "环保投诉",
-
-            "                                  铁路航空",
             "铁路",
             "东航",
             "厦航"
@@ -48,20 +46,14 @@ public class home_activity_one extends AppCompatActivity {
             "12110",
             "12345",
             "12309",
-            "",
-
             "12315",
             "12358",
             "12365",
             "12351",
             "12369",
-
-            "",
             "12306",
             "95530",
             "95557"
-
-
     };
     private SimpleAdapter simpleAdapter;
     private List<Map<String, Object>> list;
@@ -85,5 +77,11 @@ public class home_activity_one extends AppCompatActivity {
                 new String[]{"name", "numb"},
                 new int[]{R.id.name, R.id.numb});
         listView.setAdapter(simpleAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.i("position", String.valueOf(position));
+            }
+        });
     }
 }
