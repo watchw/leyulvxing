@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.qimo.HomeFragment"
+        android:name="com.example.qimo.Home.HomeFragment"
         android:label="首页"
         tools:layout="@layout/home_fragment" />
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.example.qimo.NewsFragment"
+        android:name="com.example.qimo.News.NewsFragment"
         android:label="新闻"
         tools:layout="@layout/news_fragment" />
     <fragment
         android:id="@+id/lifeFragment"
-        android:name="com.example.qimo.LifeFragment"
+        android:name="com.example.qimo.Life.LifeFragment"
         android:label="生活"
         tools:layout="@layout/life_fragment" />
     <fragment
         android:id="@+id/activityFragment"
-        android:name="com.example.qimo.ActivityFragment"
+        android:name="com.example.qimo.Promotion.ActivityFragment"
         android:label="活动"
         tools:layout="@layout/activity_fragment" />
     <fragment
         android:id="@+id/userFragment"
-        android:name="com.example.qimo.UserFragment"
+        android:name="com.example.qimo.Mine.MineFragment"
         android:label="个人"
-        tools:layout="@layout/user_fragment" />
+        tools:layout="@layout/fragment_mine" />
 </navigation>

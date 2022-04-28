@@ -2,23 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:src="@drawable/chiqikou"
+        android:scaleType="fitXY"
         android:id="@+id/home_img" />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:text="   ciqikou"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:text="ciqikou"
+        android:textColor="#333333"
         android:id="@+id/home_title_text"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:text="   asdhkjadhksakl"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="asdhkjadhksakl"
+        android:textColor="#666666"
         android:id="@+id/home_content_text"/>
 </LinearLayout>

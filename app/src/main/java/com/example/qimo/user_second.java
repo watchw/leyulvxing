@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.qimo.Tools.DBOpenHelper;
+
 public class user_second extends AppCompatActivity {
     private DBOpenHelper mdbOpenHelper;
     private EditText reg_username;

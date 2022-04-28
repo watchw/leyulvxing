@@ -3,172 +3,213 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".Home.HomeFragment">
+
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/looper_pager"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"/>
-        <RelativeLayout
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp">
-            <LinearLayout
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/looper_pager"
                 android:layout_width="match_parent"
-                android:layout_height="35dip"
-                android:layout_gravity="center"
-                android:background="#33F0E2E2"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:id="@+id/lin_tou">
-                <TextView
-                    android:id="@+id/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="图片标题"
-                    android:textColor="@android:color/black" />
+                android:layout_height="200dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal" >
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
 
                     <View
                         android:id="@+id/dot_0"
-                        android:layout_width="30dp"
-                        android:layout_height="25dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
                         android:layout_marginLeft="2dip"
                         android:layout_marginRight="2dip"
-                        android:background="@drawable/dot_yes"
-                        />
+                        android:background="@drawable/dot_yes" />
 
                     <View
                         android:id="@+id/dot_1"
-                        android:layout_width="30dp"
-                        android:layout_height="25dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
                         android:layout_marginLeft="2dip"
                         android:layout_marginRight="2dip"
-                        android:background="@drawable/dot_no"/>
+                        android:background="@drawable/dot_no" />
+
                     <View
                         android:id="@+id/dot_2"
-                        android:layout_width="30dp"
-                        android:layout_height="25dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
                         android:layout_marginLeft="2dip"
                         android:layout_marginRight="2dip"
-                        android:background="@drawable/dot_no"/>
+                        android:background="@drawable/dot_no" />
 
                 </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/lin_tou"
-                android:id="@+id/btn_1"
-                android:gravity="center"
-                android:orientation="horizontal">
-                    <Button
-                    android:layout_width="120dp"
-                    android:layout_height="100dp"
+
+                <LinearLayout
+                    android:id="@+id/lin_tou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:drawableTop="@mipmap/iphone"
-                    android:background="@drawable/btn_1"
-                    android:paddingTop="5dp"
-                    android:drawablePadding="-15dp"
-                    android:text="急用电话"
-                    android:id="@+id/btn_days"/>
+                    android:background="#33F0E2E2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="12sp"
+                        android:text="图片标题"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lin_tou"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
                     <Button
-                        android:layout_width="120dp"
+                        android:id="@+id/btn_days"
+                        android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_1"
+                        android:drawableTop="@mipmap/iphone"
+                        android:drawablePadding="-15dp"
+                        android:paddingTop="5dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:text="急用电话" />
+
+                    <Button
+                        android:id="@+id/btn_zhishi"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:background="@drawable/btn_1"
                         android:drawableTop="@mipmap/zhishi"
-                        android:paddingTop="5dp"
                         android:drawablePadding="-15dp"
-                        android:text="重庆小知识"
-                        android:id="@+id/btn_zhishi"/>
+                        android:paddingTop="5dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:text="重庆小知识" />
+
                     <Button
-                        android:layout_width="120dp"
+                        android:id="@+id/btn_fangyan"
+                        android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:background="@drawable/btn_1"
                         android:drawableTop="@mipmap/fanyan"
-                        android:paddingTop="5dp"
                         android:drawablePadding="-15dp"
-                        android:text="重庆方言"
-                        android:id="@+id/btn_fangyan"/>
+                        android:paddingTop="5dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:text="重庆方言" />
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/btn_1"
-                android:id="@+id/btn_2"
-                android:orientation="horizontal">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_1"
+                    android:orientation="horizontal">
+
                     <Button
+                        android:id="@+id/btn_meihsi"
                         android:layout_width="120dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:background="@drawable/btn_1"
-                        android:paddingTop="5dp"
-                        android:drawablePadding="-15dp"
                         android:drawableTop="@mipmap/eats"
-                        android:text="美食推荐"
-                        android:id="@+id/btn_meihsi"/>
+                        android:drawablePadding="-15dp"
+                        android:paddingTop="5dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:text="美食推荐" />
+
                     <Button
+                        android:id="@+id/btn_ct"
                         android:layout_width="120dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:background="@drawable/btn_1"
-                        android:paddingTop="5dp"
-                        android:drawablePadding="-15dp"
                         android:drawableTop="@mipmap/ct"
-                        android:text="饭店推荐"
-                        android:id="@+id/btn_ct"/>
+                        android:drawablePadding="-15dp"
+                        android:paddingTop="5dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:text="饭店推荐" />
 
                     <Button
+                        android:id="@+id/btn_chuxing"
                         android:layout_width="120dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
+                        android:layout_weight="1"
                         android:background="@drawable/btn_1"
-                        android:paddingTop="5dp"
-                        android:drawablePadding="-15dp"
                         android:drawableTop="@mipmap/chuxing"
-                        android:text="出行方式"
-                        android:id="@+id/btn_chuxing"/>
+                        android:drawablePadding="-15dp"
+                        android:paddingTop="5dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        android:text="出行方式" />
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/btn_2"
-                android:layout_marginTop="30dp"
-                android:id="@+id/huodong"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/huodong"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:text="热门景点      "/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="15sp"
-                    android:text="popular feature spot"/>
-            </LinearLayout>
+                    android:layout_below="@id/btn_2"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热门景点"
+                        android:textColor="#333333"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
             <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="1350dp"
+                android:id="@+id/home_listView"
+                android:layout_width="match_parent"
+                android:layout_height="1450dp"
                 android:layout_below="@id/huodong"
-                android:layout_marginTop="20dp"
-                android:id="@+id/home_listView"/>
-        </RelativeLayout>
+                android:background="@color/white"/>
 
-    </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
 </FrameLayout>

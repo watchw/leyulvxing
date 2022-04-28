@@ -17,10 +17,10 @@ public class SceneryFgAdapter extends FragmentPagerAdapter {
         switch (position){
             case 0:
                 fragment=new Fragment_one();
-                break;
+//                break;
             case 1:
                 fragment=new Fragment_two();
-                break;
+//                break;
             case 2:
                 fragment=new Fragment_three();
                 break;
