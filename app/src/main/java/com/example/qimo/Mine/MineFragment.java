@@ -58,7 +58,7 @@ public class MineFragment extends BaseFragment {
         updateView();
     }
 
-    @OnClick({R.id.collection_layout, R.id.cache_layout, R.id.logout_btn, R.id.login_btn})
+    @OnClick({R.id.collection_layout, R.id.cache_layout, R.id.logout_btn, R.id.login_btn, R.id.about_layout})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.collection_layout:
@@ -72,6 +72,9 @@ public class MineFragment extends BaseFragment {
                 break;
             case R.id.login_btn:
                 toLogin();
+                break;
+            case R.id.about_layout:
+                toAbout();
                 break;
         }
     }
@@ -110,6 +113,11 @@ public class MineFragment extends BaseFragment {
 
     private void toLogin() {
         Intent intent = new Intent(getActivity(), LoginActivity.class);
+        startActivity(intent);
+    }
+
+    private void toAbout() {
+        Intent intent = new Intent(getActivity(), AboutActivity.class);
         startActivity(intent);
     }
 }

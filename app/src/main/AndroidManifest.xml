@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".News.NewsDetailActivity"></activity>
+        <activity android:name=".Mine.AboutActivity"></activity>
+        <activity android:name=".News.NewsDetailActivity" />
         <activity android:name=".Login.RegistActivity" />
         <activity android:name=".Login.LoginActivity" />
         <activity android:name=".Home.home_activity_six" />
