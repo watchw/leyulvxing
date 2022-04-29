@@ -1,5 +1,7 @@
 package com.example.qimo.Mine;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -83,9 +85,27 @@ public class MineFragment extends BaseFragment {
     }
 
     private void toLogout() {
-        Toast.makeText(getContext(), "已退出登录", Toast.LENGTH_SHORT).show();
-        DataTools.user = null;
-        updateView();
+        AlertDialog dialog = new AlertDialog.Builder(getContext())
+                .setTitle("提示")
+                .setMessage("确定退出登录？")
+                //设置对话框的按钮
+                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        DataTools.user = null;
+                        updateView();
+                    }
+                }).create();
+        dialog.show();
+
+
     }
 
     private void toLogin() {
