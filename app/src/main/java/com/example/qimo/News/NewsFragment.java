@@ -1,20 +1,22 @@
 package com.example.qimo.News;
 
 import android.os.Bundle;
+import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
+import com.example.qimo.Base.BaseFragment;
 import com.example.qimo.R;
 import com.google.android.material.tabs.TabLayout;
 
-public class NewsFragment extends Fragment {
+import butterknife.BindView;
+
+public class NewsFragment extends BaseFragment {
+    @BindView(R.id.tab_layout)
+    TabLayout tabLayout;
+    @BindView(R.id.viewPager001)
+    ViewPager viewPager001;
+
     private String[] tabletitle = {
             "热点",
             "本地",
@@ -24,22 +26,16 @@ public class NewsFragment extends Fragment {
     private ViewPager viewPager;
     private View nview;
 
-    public static NewsFragment newInstance() {
-        return new NewsFragment();
+    @Override
+    public int bindFMLayout() {
+        return R.layout.news_fragment;
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        nview = inflater.inflate(R.layout.news_fragment, null);
-        viewPager = (ViewPager) nview.findViewById(R.id.viewPager001);
-        tableLayout = (TabLayout) nview.findViewById(R.id.tab_layout);
+    public void bindFMValue(View view, Bundle savedInstanceState) {
         SceneryFgAdapter sceneryFgAdapter = new SceneryFgAdapter(getChildFragmentManager(), tabletitle);
-        viewPager.setAdapter(sceneryFgAdapter);
-        //tablayout绑定viewpager
-        tableLayout.setupWithViewPager(viewPager);
-        return nview;
+        viewPager001.setAdapter(sceneryFgAdapter);
+        tabLayout.setupWithViewPager(viewPager001);
     }
-
 
 }

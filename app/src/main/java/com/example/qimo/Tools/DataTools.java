@@ -2,6 +2,7 @@ package com.example.qimo.Tools;
 
 import com.example.qimo.Model.Banner;
 import com.example.qimo.Model.Life;
+import com.example.qimo.Model.News;
 import com.example.qimo.Model.ScenicSpot;
 import com.example.qimo.R;
 
@@ -167,6 +168,191 @@ public class DataTools {
             }
         } else if (tag == 1) {
 
+        }
+        return list;
+    }
+
+    public static ArrayList<News> getNewsList(int tag) {
+        ArrayList<News> list = new ArrayList<News>();
+        if (tag == 0) {
+            if (true) {
+                News news = new News();
+                news.img = -1;
+                news.title = "热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 12:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo2;
+                news.title = "热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo1;
+                news.title = "热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo2;
+                news.title = "热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点";
+                news.source = "新浪新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo1;
+                news.title = "热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo1;
+                news.title = "热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点";
+                news.source = "新浪新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo2;
+                news.title = "热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo1;
+                news.title = "热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点热点";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+        } else if (tag == 1) {
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo1;
+                news.title = "本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo2;
+                news.title = "本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地";
+                news.source = "新浪新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = -1;
+                news.title = "本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 12:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo2;
+                news.title = "本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo1;
+                news.title = "本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地";
+                news.source = "新浪新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo1;
+                news.title = "本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo2;
+                news.title = "本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo1;
+                news.title = "本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地本地";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+        } else if (tag == 2) {
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo1;
+                news.title = "专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题";
+                news.source = "新浪新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo2;
+                news.title = "专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo1;
+                news.title = "专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题";
+                news.source = "新浪新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo1;
+                news.title = "专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题";
+                news.source = "新浪新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = R.drawable.huoguo2;
+                news.title = "专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题";
+                news.source = "新浪新闻";
+                news.time = "2021-04-30 13:00";
+                list.add(news);
+            }
+            if (true) {
+                News news = new News();
+                news.img = -1;
+                news.title = "专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题专题";
+                news.source = "腾迅新闻";
+                news.time = "2021-04-30 12:00";
+                list.add(news);
+            }
         }
         return list;
     }

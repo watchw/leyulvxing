@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.qimo.Base.BaseActivity;
 import com.example.qimo.Tools.DBOpenHelper;
 import com.example.qimo.MainActivity;
 import com.example.qimo.R;
@@ -25,7 +26,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends BaseActivity {
 
     @BindView(R.id.et_username)
     EditText etUsername;
@@ -43,12 +44,12 @@ public class LoginActivity extends AppCompatActivity {
     private SharedPreferences.Editor editor;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public int bindContentView() {
+        return R.layout.activity_login;
+    }
 
-        setContentView(R.layout.activity_login);
-        ButterKnife.bind(this);
-
+    @Override
+    public void initActivity() {
         mdbOpenHelper = new DBOpenHelper(this);
         SharedPreferences sp = this.getSharedPreferences("user_mes", Context.MODE_PRIVATE);
         editor = sp.edit();
