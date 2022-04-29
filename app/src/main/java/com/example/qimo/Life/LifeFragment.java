@@ -34,43 +34,65 @@ public class LifeFragment extends Fragment {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.life_btn_canting:
-                Intent intent = new Intent(getActivity(), life_second.class);
-                startActivity(intent);
+                toNext(0);
                 break;
             case R.id.life_btn_jiudian:
+                toNext(1);
                 break;
             case R.id.life_btn_dianying:
+                toNext(2);
                 break;
             case R.id.life_btn_youleyuan:
+                toNext(3);
                 break;
             case R.id.life_btn_gongyuan:
+                toNext(4);
                 break;
             case R.id.life_btn_yinpin:
+                toNext(5);
                 break;
             case R.id.life_btn_chaoshi:
+                toNext(6);
                 break;
             case R.id.life_btn_yiyuan:
+                toNext(7);
                 break;
             case R.id.life_btn_jiaxiao:
+                toNext(8);
                 break;
             case R.id.life_btn_hunsha:
+                toNext(9);
                 break;
             case R.id.life_btn_xuexiao:
+                toNext(10);
                 break;
             case R.id.life_btn_kuaidi:
+                toNext(11);
                 break;
             case R.id.life_btn_qici:
+                toNext(12);
                 break;
             case R.id.life_btn_banjia:
+                toNext(13);
                 break;
             case R.id.life_btn_xiyi:
+                toNext(14);
                 break;
             case R.id.life_btn_hunsha2:
+                toNext(15);
                 break;
             case R.id.life_btn_xuexiao2:
+                toNext(16);
                 break;
             case R.id.life_btn_kuaidi2:
+                toNext(17);
                 break;
         }
+    }
+
+    private void toNext(int tag) {
+        Intent intent = new Intent(getActivity(), life_second.class);
+        intent.putExtra("tag", tag);
+        startActivity(intent);
     }
 }

@@ -118,6 +118,27 @@ public class DataTools {
             }
             if (true) {
                 Life life = new Life();
+                life.img = R.drawable.huoguo2;
+                life.title = "重庆老火锅 （重庆总店）";
+                life.subtitle = "渝北区      火锅";
+                list.add(life);
+            }
+            if (true) {
+                Life life = new Life();
+                life.img = R.drawable.huoguo1;
+                life.title = "巴蜀打火锅（重庆店）";
+                life.subtitle = "靖江区      火锅";
+                list.add(life);
+            }
+            if (true) {
+                Life life = new Life();
+                life.img = R.drawable.huoguo1;
+                life.title = "巴蜀打火锅（重庆店）";
+                life.subtitle = "靖江区      火锅";
+                list.add(life);
+            }
+            if (true) {
+                Life life = new Life();
                 life.img = R.drawable.huoguo1;
                 life.title = "巴蜀打火锅（重庆店）";
                 life.subtitle = "靖江区      火锅";
