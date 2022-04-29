@@ -1,10 +1,14 @@
 package com.example.qimo.News;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.qimo.Base.BaseFragment;
+import com.example.qimo.Life.life_second;
 import com.example.qimo.Model.News;
 import com.example.qimo.R;
 
@@ -37,8 +41,19 @@ public class NewsListFragment extends BaseFragment {
     public void bindFMValue(View view, Bundle savedInstanceState) {
         adapter = new NewsListAdapter(getContext());
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.i("news_list", String.valueOf(position));
+                Intent intent = new Intent(getActivity(), NewsDetailActivity.class);
+                intent.putExtra("data", list.get(position));
+                startActivity(intent);
+            }
+        });
         if (null != listener) {
-            adapter.setData(listener.getData());
+            list = listener.getData();
+            adapter.setData(list);
+
         }
     }
 
