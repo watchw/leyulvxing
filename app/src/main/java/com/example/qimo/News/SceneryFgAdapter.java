@@ -1,8 +1,5 @@
 package com.example.qimo.News;
 
-import com.example.qimo.Fragment_one;
-import com.example.qimo.Fragment_three;
-import com.example.qimo.Fragment_two;
 import com.example.qimo.Model.News;
 import com.example.qimo.Tools.DataTools;
 

@@ -22,7 +22,7 @@
         <activity android:name=".Home.home_activity_two" />
         <activity android:name=".Home.home_activity_one" /> <!-- <activity android:name=".HomeActivityOne" /> -->
         <activity android:name=".News.New_ThreeActivity" />
-        <activity android:name=".user_second" />
+        <activity android:name=".Login.user_second" />
         <activity android:name=".News.news_second" />
         <activity android:name=".Promotion.activity_second" />
         <activity android:name=".MainActivity">

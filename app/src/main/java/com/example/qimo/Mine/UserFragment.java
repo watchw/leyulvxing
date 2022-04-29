@@ -22,7 +22,7 @@ import com.example.qimo.Tools.DBOpenHelper;
 import com.example.qimo.MainActivity;
 import com.example.qimo.R;
 import com.example.qimo.Model.User;
-import com.example.qimo.user_second;
+import com.example.qimo.Login.user_second;
 
 import java.util.ArrayList;
 import java.util.Map;
