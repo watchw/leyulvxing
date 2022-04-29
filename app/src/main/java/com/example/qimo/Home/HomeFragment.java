@@ -142,8 +142,6 @@ public class HomeFragment extends Fragment {
             case R.id.btn_days:
                 Intent intent = new Intent(getActivity(), home_activity_one.class);
                 startActivity(intent);
-//                Intent intent = new Intent(getActivity(), LoginActivity.class);
-//                startActivity(intent);
                 break;
             case R.id.btn_zhishi:
                 Intent intent1 = new Intent(getActivity(), home_activity_two.class);

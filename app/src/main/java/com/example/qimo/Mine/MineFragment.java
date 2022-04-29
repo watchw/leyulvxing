@@ -1,74 +1,95 @@
 package com.example.qimo.Mine;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.qimo.Base.BaseFragment;
+import com.example.qimo.Login.LoginActivity;
 import com.example.qimo.R;
+import com.example.qimo.Tools.DataTools;
 
-import butterknife.ButterKnife;
+import butterknife.BindView;
+import butterknife.OnClick;
 
-public class MineFragment extends Fragment {
+public class MineFragment extends BaseFragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    @BindView(R.id.mine_layout)
+    ScrollView mineLayout;
+    @BindView(R.id.login_btn)
+    Button loginBtn;
+    @BindView(R.id.login_layout)
+    RelativeLayout loginLayout;
+    @BindView(R.id.title_text_view)
+    TextView titleTextView;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public MineFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment MineFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static MineFragment newInstance(String param1, String param2) {
-        MineFragment fragment = new MineFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+    @Override
+    public int bindFMLayout() {
+        return R.layout.fragment_mine;
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+    public void bindFMValue(View view, Bundle savedInstanceState) {
+        updateView();
+    }
+
+    private void updateView() {
+        if (null == DataTools.user) {
+            loginLayout.setVisibility(View.VISIBLE);
+            mineLayout.setVisibility(View.GONE);
+        } else {
+            loginLayout.setVisibility(View.GONE);
+            mineLayout.setVisibility(View.VISIBLE);
+
+            titleTextView.setText(DataTools.user.getName());
         }
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mine, container, false);
+    public void onResume() {
+        super.onResume();
+        updateView();
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    @OnClick({R.id.collection_layout, R.id.cache_layout, R.id.logout_btn, R.id.login_btn})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.collection_layout:
+                toCollection();
+                break;
+            case R.id.cache_layout:
+                toCache();
+                break;
+            case R.id.logout_btn:
+                toLogout();
+                break;
+            case R.id.login_btn:
+                toLogin();
+                break;
+        }
+    }
 
-        ButterKnife.bind(this, view);
+    private void toCollection() {
 
+    }
 
+    private void toCache() {
+        Toast.makeText(getContext(), "缓存已清空", Toast.LENGTH_SHORT).show();
+    }
+
+    private void toLogout() {
+        Toast.makeText(getContext(), "已退出登录", Toast.LENGTH_SHORT).show();
+        DataTools.user = null;
+        updateView();
+    }
+
+    private void toLogin() {
+        Intent intent = new Intent(getActivity(), LoginActivity.class);
+        startActivity(intent);
     }
 }

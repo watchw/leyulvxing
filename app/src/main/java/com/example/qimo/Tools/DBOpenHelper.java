@@ -16,16 +16,16 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     private SQLiteDatabase db;
 
     public DBOpenHelper(@Nullable Context context) {
-        super(context,"db_test",null,1);
-        db=getReadableDatabase();
+        super(context, "db_test", null, 1);
+        db = getReadableDatabase();
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE IF NOT EXISTS user(" + "_id INTEGER PRIMARY KEY AUTOINCREMENT,"
-        +"name,"
-        +"password,"
-        +"email)"
+                + "name,"
+                + "password,"
+                + "email)"
         );
 
     }
@@ -36,24 +36,28 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         onCreate(db);
 
     }
-    public void add(String name,String password,String email){
+
+    public void add(String name, String password, String email) {
         db.execSQL("INSERT INTO user (name,password,email) VALUES(?,?,?)",
-                new Object[]{name,password,email});
+                new Object[]{name, password, email});
     }
-    public void delete(String name,String password){
-        db.execSQL("DELETE FROM user WHERE name = AND password ="+name+password);
+
+    public void delete(String name, String password) {
+        db.execSQL("DELETE FROM user WHERE name = AND password =" + name + password);
     }
-    public void update(String password){
-        db.execSQL("UPDATE user SET password = ?",new Object[]{password});
+
+    public void update(String password) {
+        db.execSQL("UPDATE user SET password = ?", new Object[]{password});
     }
-    public ArrayList<User>getAllDate(){
-        ArrayList<User> list=new ArrayList<User>();
-        @SuppressLint("Recycle") Cursor cursor=db.query("user",null,null,null,null,null,"name DESC");
-        while (cursor.moveToNext()){
-            String name=cursor.getString(cursor.getColumnIndex("name"));
-            String password=cursor.getString(cursor.getColumnIndex("password"));
-            String email=cursor.getString(cursor.getColumnIndex("email"));
-            list.add(new User(name,password,email));
+
+    public ArrayList<User> getAllDate() {
+        ArrayList<User> list = new ArrayList<User>();
+        @SuppressLint("Recycle") Cursor cursor = db.query("user", null, null, null, null, null, "name DESC");
+        while (cursor.moveToNext()) {
+            String name = cursor.getString(cursor.getColumnIndex("name"));
+            String password = cursor.getString(cursor.getColumnIndex("password"));
+            String email = cursor.getString(cursor.getColumnIndex("email"));
+            list.add(new User(name, password, email));
         }
         return list;
     }

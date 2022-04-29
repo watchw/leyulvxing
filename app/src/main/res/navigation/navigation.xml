@@ -28,6 +28,6 @@
     <fragment
         android:id="@+id/userFragment"
         android:name="com.example.qimo.Mine.MineFragment"
-        android:label="个人"
+        android:label="个人中心"
         tools:layout="@layout/fragment_mine" />
 </navigation>

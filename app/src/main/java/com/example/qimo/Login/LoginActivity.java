@@ -19,6 +19,7 @@ import com.example.qimo.Tools.DBOpenHelper;
 import com.example.qimo.MainActivity;
 import com.example.qimo.R;
 import com.example.qimo.Model.User;
+import com.example.qimo.Tools.DataTools;
 
 import java.util.ArrayList;
 
@@ -103,6 +104,7 @@ public class LoginActivity extends BaseActivity {
                         editor.apply();
                         match2 = false;
                     }
+                    DataTools.user = user;
                     break;
                 } else {
                     match = false;
@@ -110,10 +112,7 @@ public class LoginActivity extends BaseActivity {
             }
             if (match) {
                 Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show();
-                String user_name = userName;
-                Intent intent = new Intent(this, MainActivity.class);
-                intent.putExtra("user_name", user_name);
-                startActivity(intent);
+                finish();
             } else {
                 Toast.makeText(this, "用户名或密码不正确", Toast.LENGTH_SHORT).show();
             }

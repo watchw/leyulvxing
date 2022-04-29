@@ -4,6 +4,7 @@ import com.example.qimo.Model.Banner;
 import com.example.qimo.Model.Life;
 import com.example.qimo.Model.News;
 import com.example.qimo.Model.ScenicSpot;
+import com.example.qimo.Model.User;
 import com.example.qimo.R;
 
 import java.util.ArrayList;
@@ -17,6 +18,8 @@ import java.util.Dictionary;
  * @description 描述
  */
 public class DataTools {
+
+    public static User user = null;
 
     public static ArrayList getHomeBanner() {
         ArrayList<Banner> list = new ArrayList<Banner>();

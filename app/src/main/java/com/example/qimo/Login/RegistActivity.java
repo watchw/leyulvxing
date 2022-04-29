@@ -73,9 +73,8 @@ public class RegistActivity extends AppCompatActivity {
         if (!TextUtils.isEmpty(username) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(password2) && !TextUtils.isEmpty(mail)) {
             if (password.equals(password2)) {
                 mdbOpenHelper.add(username, password, mail);
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
                 Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show();
+                finish();
             } else {
                 Toast.makeText(this, "两次密码不同，请重新输入！", Toast.LENGTH_SHORT).show();
             }
