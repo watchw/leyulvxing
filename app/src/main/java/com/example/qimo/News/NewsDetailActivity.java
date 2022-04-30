@@ -1,6 +1,7 @@
 package com.example.qimo.News;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,7 +37,10 @@ public class NewsDetailActivity extends BaseActivity {
         sourceTextView.setText(news.source);
         timeTextView.setText(news.time);
         if (news.img != -1) {
+            imageView.setVisibility(View.VISIBLE);
             imageView.setImageResource(news.img);
+        } else {
+            imageView.setVisibility(View.GONE);
         }
         detailTextView.setText(news.detail);
     }
