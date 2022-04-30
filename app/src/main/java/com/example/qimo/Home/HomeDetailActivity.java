@@ -5,6 +5,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.qimo.Base.BaseActivity;
+import com.example.qimo.Model.ScenicSpot;
 import com.example.qimo.R;
 
 import butterknife.BindView;
@@ -30,6 +31,8 @@ public class HomeDetailActivity extends BaseActivity {
     @BindView(R.id.phone_text_view)
     TextView phoneTextView;
 
+    private ScenicSpot scenicSpot;
+
     @Override
     public int bindContentView() {
         return R.layout.activity_home_detail;
@@ -37,6 +40,22 @@ public class HomeDetailActivity extends BaseActivity {
 
     @Override
     public void initActivity() {
+        scenicSpot = getIntent().getParcelableExtra("data");
+
+        imageView.setImageResource(scenicSpot.img);
+        titleTextView.setText(scenicSpot.title);
+        if (null != scenicSpot.detail) {
+            detailTextView.setText(scenicSpot.detail);
+        }
+        if (null != scenicSpot.time) {
+            timeTextView.setText(scenicSpot.time);
+        }
+        if (null != scenicSpot.address) {
+            addressTextView.setText(scenicSpot.address);
+        }
+        if (null != scenicSpot.phone) {
+            phoneTextView.setText(scenicSpot.phone);
+        }
 
     }
 

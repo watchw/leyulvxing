@@ -131,6 +131,7 @@ public class HomeFragment extends Fragment {
                 Log.i("position", String.valueOf(position));
                 Intent intent = new Intent();
                 intent.setClass(getActivity(), HomeDetailActivity.class);
+                intent.putExtra("data", scenicSpots.get(position));
                 startActivity(intent);
             }
         });
