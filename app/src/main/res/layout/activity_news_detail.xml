@@ -63,13 +63,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:src="@drawable/chiqikou"
-                android:scaleType="fitXY" />
+                android:scaleType="fitXY"
+                android:layout_marginBottom="20dp"/>
 
             <TextView
                 android:id="@+id/detail_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:text="fladsfajfakls"
                 android:textColor="#666666"
                 android:textSize="15sp"/>
