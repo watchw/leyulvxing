@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">乐渝旅行</string>
-    <string-array name="top1">
-        <item>渝北区</item>
-        <item>北碚区</item>
-    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string-array name="top2">
         <item>自驾游</item>
         <item>跟团</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="top1">
+        <item>渝北区</item>
+        <item>北碚区</item>
+    </string-array>
 </resources>

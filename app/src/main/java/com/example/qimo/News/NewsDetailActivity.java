@@ -35,7 +35,9 @@ public class NewsDetailActivity extends BaseActivity {
         titleTextView.setText(news.title);
         sourceTextView.setText(news.source);
         timeTextView.setText(news.time);
-        imageView.setImageResource(news.img);
+        if (news.img != -1) {
+            imageView.setImageResource(news.img);
+        }
         detailTextView.setText(news.detail);
     }
 

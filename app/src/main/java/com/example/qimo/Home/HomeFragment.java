@@ -130,7 +130,7 @@ public class HomeFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.i("position", String.valueOf(position));
                 Intent intent = new Intent();
-                intent.setClass(getActivity(), activity_second.class);
+                intent.setClass(getActivity(), HomeDetailActivity.class);
                 startActivity(intent);
             }
         });
