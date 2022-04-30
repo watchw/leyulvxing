@@ -17,6 +17,8 @@ public class home_activity_five extends AppCompatActivity {
     private SimpleAdapter simpleAdapter;
     private List<Map<String, Object>> list;
     private ListView listView;
+
+
     private String[] text1 = new String[]{
             "1、杨记隆府",
             "2、珮姐老火锅",
