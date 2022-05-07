@@ -50,7 +50,6 @@ public class life_second extends AppCompatActivity {
         lifeSecondListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.i("position123", String.valueOf(position));
                 Intent intent = new Intent();
                 intent.setClass(self, LifeDetailActivity.class);
                 intent.putExtra("data", list.get(position));

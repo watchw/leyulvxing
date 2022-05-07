@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.qimo.Base.BaseFragment;
+import com.example.qimo.Collection.CollectionActivity;
 import com.example.qimo.Login.LoginActivity;
 import com.example.qimo.R;
 import com.example.qimo.Tools.DataTools;
@@ -80,7 +81,8 @@ public class MineFragment extends BaseFragment {
     }
 
     private void toCollection() {
-
+        Intent intent = new Intent(getActivity(), CollectionActivity.class);
+        startActivity(intent);
     }
 
     private void toCache() {
