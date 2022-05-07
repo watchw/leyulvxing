@@ -45,7 +45,7 @@ public class DataTools {
             scenicSpot.subtitle="4A级景区  巴渝古镇  古村落";
             scenicSpot.time="全年 10：00-20：00";
             scenicSpot.address="地址：重庆市沙坪坝区磁器口古镇";
-            scenicSpot.phone="电话：023-65010003";
+            scenicSpot.phone="023-65010003";
             scenicSpot.img = R.drawable.detail_ciqikou;
             list.add(scenicSpot);
         }
@@ -59,7 +59,7 @@ public class DataTools {
             scenicSpot.subtitle="4A级景区  巴渝古镇  古村落";
             scenicSpot.time="2/18-12/31 08：00-22：00";
             scenicSpot.address="地址: 重庆市酉阳县龚滩古镇207号";
-            scenicSpot.phone="电话:023-75706888,023-75677000,023-75582277";
+            scenicSpot.phone="023-75706888,023-75677000,023-75582277";
             scenicSpot.img = R.drawable.detail_gongtanguzhen;
             list.add(scenicSpot);
         }
@@ -73,7 +73,7 @@ public class DataTools {
                     "        景区有优美的自然田园风光，悠久的人文历史，灿烂的民族文化，浓郁的民族风情。保留和传承的土家摆手舞、酉阳民歌、木叶情歌、西兰卡普等民俗文化独特完整。古桃源桃林夹岸、芳草鲜美、落英缤纷，土地平旷、阡陌纵横、良田美池、村落点布。伏羲洞规模庞大，溶洞内沉积物千姿百态，被“中国天坑之父”朱学稳称赞为“地下石林、世界奇观”。";
             scenicSpot.time="3/1-10/30 08:00-17:30;11/1-2/28 08:00-17:00";
             scenicSpot.address="地址：重庆市酉阳土家族苗族自治县境内县桃花源路232号";
-            scenicSpot.phone="电话：023-75559222,400-872-9008,023-75766888";
+            scenicSpot.phone="023-75559222,400-872-9008,023-75766888";
             list.add(scenicSpot);
         }
         if (true) {
@@ -88,7 +88,7 @@ public class DataTools {
                     "      走进洪崖洞民俗风貌区两边都是密集的吊脚楼。从脚下的沿江路到顶层的沧白路有11层之多。各层内容不同，有餐馆、有小吃街、有酒吧咖啡厅，也有土特产商铺。顶层是异域风情城市阳台，可乘坐电梯直达。站在观景平台上，可远观两江交汇，风光无限。\n" ;
             scenicSpot.time="全年 11：00-23：00";
             scenicSpot.address="地址：重庆市渝中区滨江路88号（嘉陵江畔）";
-            scenicSpot.phone="电话：023-63039995,023-63039853";
+            scenicSpot.phone="023-63039995,023-63039853";
             list.add(scenicSpot);
         }
         if (true) {
@@ -100,7 +100,7 @@ public class DataTools {
                     "      景区幅员面积213.37平方公里，主要有望乡台、土地岩、龙潭湖、洪海、珍珠湖、水口寺、会龙庄、爱情天梯等核心景区，128个景点，自然景观独特、生态环境优美、旅游资源丰富，极具游憩价值，是休闲度假的旅游目的地。因其好山好水、富硒富氧而备受关注，被国际生态学会专家誉为全球植被丰、水质佳、空气纯的地区之一。\n";
             scenicSpot.time="全年 08:00-18:00";
             scenicSpot.address="地址：重庆市江津区四面山镇";
-            scenicSpot.phone="电话：023-47666888,023-47666559";
+            scenicSpot.phone="023-47666888,023-47666559";
             list.add(scenicSpot);
         }
         return list;
