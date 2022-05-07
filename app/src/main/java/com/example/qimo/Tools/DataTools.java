@@ -147,6 +147,46 @@ public class DataTools {
         return list;
     }
 
+    public static ArrayList<Life> getSearchLifes(int tag) {
+        ArrayList<Life> list = new ArrayList<Life>();
+        if (tag == 0) {
+            if (true) {
+                Life life = new Life();
+                life.img = R.drawable.pingjieguoguo;
+                life.title = "萍姐火锅·公路夜市";
+                life.subtitle = "观音桥      重庆火锅";
+                life.detail="        萍姐火锅是由亚特餐饮打造的火锅品牌，作为近几年以来快速崛起的餐饮新势力，将重庆火锅传统的商业模式，从定位、产品、媒介、流星、空间、内容等进行了跨时代的全方位升级，核心爆品战略、全网媒介互通、网红IP打造等。让传统的重庆火锅元素结合当下的商业诉求，提升到了新的高度，焕发出不一样的生机与活力，旗下品牌卤校长火锅、全网流量过十亿，品牌总店数超200+，占据全国火锅商业市场半壁江山，成为了新一代重庆火锅的标杆品牌。亚特餐饮将不懈追求，努力奋进，致力于重庆火锅文化发扬光大，全力将重庆火锅带出一个新的天地。";
+                life.star="4.4";
+                life.time="11:30-14:00, 16:00-00:00";
+                life.keywords="有卫生间  空调开放  免费WiFi 可手机充电 可自助点餐";
+                life.recommend="耙鸡爪¥23  凤尾发鱿鱼¥22  萍姐火锅  白桃乌龙拿铁¥16\n" +
+                        "耙肥肠¥28  鲜椒牛肉¥26  麻辣牛肉¥26  耙牛肉";
+                life.recommend_title="菜品推荐:";
+                life.phone="023 6752 8886";
+                life.address="地址：重庆市江北区观音桥北城天街HM正对面天天尚街2楼";
+                list.add(life);
+            }
+            if (true) {
+                Life life = new Life();
+                life.img = R.drawable.yudashi;
+                life.title = "渝大狮毛肚火锅（南坪总店）";
+                life.subtitle = "南坪      重庆火锅";
+                life.detail="        1918年 “渝⼤狮”前身“巴⼈⽔⼋块”在重庆刘家台码头诞⽣。1997 年， “巴⼈⽔⼋块”后⼈继承祖业，成⽴“巴⼈⽕锅城”。2010年，“巴⼈⽕锅城”正式更名“红今渝”。2016年“红今渝”再次更名为“渝⼤狮”，⾃此开启⽕爆模式！\n" +
+                        "        渝⼤狮还原唐朝酒楼，⻔匾式招牌，内设京剧或书法表演等，古⾊古⾹古韵。意重、氛烈、志狂、质上、价中、菜丰、堂美、味浓。所谓 “正宗王者味，百年⽼⽕锅”！ 正统渝派⽼⽕锅，独特的意境菜创新。⼝感地道、菜品精致、服务优良，给顾客极致的⽕锅体验。⻓年登美团、⼤众点评热⻔榜、环境榜、⼈⽓榜、好评榜第⼀名。";
+                life.star="4.9";
+                life.time="11:00-03:00";
+                life.keywords="有卫生间  付费停车  免费WiFi 有包厢 空调开放";
+                life.recommend="步步高升¥32  麻辣牛肉¥25  冰川海鸭肠  鲜鸭血¥6 \n" +
+                        "自磨黑豆腐¥8  鲜椒牛肉¥26  精品鲜猪黄喉¥26  自助西瓜";
+                life.recommend_title="菜品推荐:";
+                life.phone=" 023-62829995";
+                life.address="地址：重庆市南岸区南坪东路15号2楼";
+                list.add(life);
+            }
+        }
+        return list;
+    }
+
     public static ArrayList<Life> getLifes(int tag) {
         ArrayList<Life> list = new ArrayList<Life>();
         if (tag == 0) {
