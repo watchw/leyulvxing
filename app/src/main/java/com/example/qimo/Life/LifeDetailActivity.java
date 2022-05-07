@@ -7,10 +7,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.qimo.Base.BaseActivity;
 import com.example.qimo.Model.Life;
 import com.example.qimo.R;
+import com.example.qimo.Tools.Tools;
+
+import java.net.URISyntaxException;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -84,16 +88,45 @@ public class LifeDetailActivity extends BaseActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.phone_text_view:
-                Log.i("phone", "122983");
+                Log.i("phone", "call");
                 String number = "18166327429";
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number));
                 startActivity(intent);
                 break;
             case R.id.address_text_view:
-
+                Log.i("address", "map");
+                toMap();
                 break;
         }
 
+    }
+
+
+    private void toMap() {
+        String mLatitude = "39.918073";
+        String mLongitude = "116.399702";
+        String mAreaName = "name";
+        if (Tools.isAvilible(this, "com.baidu.BaiduMap")) {// 传入指定应用包名
+
+            try {
+                Intent intent = Intent.getIntent("intent://map/direction?destination=latlng:"
+                        + mLatitude + ","
+                        + mLongitude + "|name:"+mAreaName + // 终点
+                        "&mode=driving&" + // 导航路线方式
+                        "region=北京" + //
+                        "&src=新疆和田#Intent;scheme=bdapp;package=com.baidu.BaiduMap;end");
+                startActivity(intent); // 启动调用
+            } catch (URISyntaxException e) {
+                Log.e("intent", e.getMessage());
+            }
+        } else {// 未安装
+            Toast.makeText(this, "您尚未安装百度地图", Toast.LENGTH_LONG)
+                    .show();
+//            Uri uri = Uri
+//                    .parse("market://details?id=com.baidu.BaiduMap");
+//            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//            startActivity(intent);
+        }
     }
 
 }
