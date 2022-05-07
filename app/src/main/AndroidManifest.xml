@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Collection.CollectionActivity"
+            android:exported="false" />
+        <activity
             android:name=".Life.LifeDetailActivity"
             android:exported="false" />
         <activity
@@ -38,8 +41,8 @@
         </activity>
         <activity android:name=".Life.life_second" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

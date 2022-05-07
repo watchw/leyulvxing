@@ -114,6 +114,25 @@ public class DataTools {
         return list;
     }
 
+    public static ArrayList<ScenicSpot> getCollectionPromotionRecommendation() {
+        ArrayList<ScenicSpot> list = new ArrayList<ScenicSpot>();
+        if (true) {
+            ScenicSpot scenicSpot = new ScenicSpot();
+            scenicSpot.title = "渣滓洞";
+            scenicSpot.subtitle = "渣滓洞在重庆市歌乐山麓，距离白公馆2.5公里。渣滓洞原是重庆.....";
+            scenicSpot.img = R.drawable.zazidong;
+            list.add(scenicSpot);
+        }
+        if (true) {
+            ScenicSpot scenicSpot = new ScenicSpot();
+            scenicSpot.title = "长江索道";
+            scenicSpot.subtitle = "长江索道，是重庆第二条跨江索道（第一条为嘉陵江索道），已......";
+            scenicSpot.img = R.drawable.chongjiangsuodao;
+            list.add(scenicSpot);
+        }
+        return list;
+    }
+
     public static ArrayList getPromotionRecommendation() {
         ArrayList<ScenicSpot> list = new ArrayList<ScenicSpot>();
         if (true) {
