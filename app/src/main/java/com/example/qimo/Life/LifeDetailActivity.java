@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -79,11 +80,20 @@ public class LifeDetailActivity extends BaseActivity {
         }
     }
 
-    @OnClick(R.id.phone_text_view)
-    public void onClick() {
-        Log.i("phone", "122983");
-        String number = "18166327429";
-        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number));
+    @OnClick({R.id.phone_text_view, R.id.address_text_view})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.phone_text_view:
+                Log.i("phone", "122983");
+                String number = "18166327429";
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number));
+                startActivity(intent);
+                break;
+            case R.id.address_text_view:
+
+                break;
+        }
+
     }
 
 }
