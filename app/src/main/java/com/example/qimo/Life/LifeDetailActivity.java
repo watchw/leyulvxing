@@ -1,6 +1,9 @@
 package com.example.qimo.Life;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -78,12 +81,9 @@ public class LifeDetailActivity extends BaseActivity {
 
     @OnClick(R.id.phone_text_view)
     public void onClick() {
+        Log.i("phone", "122983");
+        String number = "18166327429";
+        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number));
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // TODO: add setContentView(...) invocation
-        ButterKnife.bind(this);
-    }
 }
