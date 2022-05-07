@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_collection.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_life_detail.xml" value="0.21875" />
+        <entry key="app/src/main/res/layout/activity_second.xml" value="0.21875" />
         <entry key="app/src/main/res/layout/life_second.xml" value="0.1" />
       </map>
     </option>

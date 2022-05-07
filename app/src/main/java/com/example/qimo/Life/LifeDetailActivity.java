@@ -84,23 +84,32 @@ public class LifeDetailActivity extends BaseActivity {
         }
     }
 
-    @OnClick({R.id.phone_text_view, R.id.address_text_view})
+    @OnClick({R.id.phone_text_view, R.id.address_text_view, R.id.book_btn})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.phone_text_view:
-                Log.i("phone", "call");
-                String number = "18166327429";
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number));
-                startActivity(intent);
+                toPhone();
                 break;
             case R.id.address_text_view:
-                Log.i("address", "map");
                 toMap();
                 break;
+            case R.id.book_btn:
+                toBook();
+                break;
+
         }
 
     }
 
+    private void toBook() {
+        toPhone();
+    }
+
+    private void toPhone() {
+        String number = "18166327429";
+        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number));
+        startActivity(intent);
+    }
 
     private void toMap() {
         String mLatitude = "39.918073";
