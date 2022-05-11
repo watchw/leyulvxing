@@ -3,6 +3,7 @@ package com.example.qimo.Life;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -62,16 +63,27 @@ public class life_second extends AppCompatActivity {
             public boolean onQueryTextSubmit(String s) {
                 //点击软键盘搜索的时候执行
                 Log.i("dd", "ddddd123");
-                adapter.setData(DataTools.getSearchLifes(tag));
+                ArrayList<Life> list2 = new ArrayList<Life>();
+                for(int i=0;i<list.size();i++){
+                    Life life = list.get(i);
+                    if(life.title.indexOf(s)!=-1){
+                        list2.add(life);
+                    }else if (life.subtitle.indexOf(s)!=-1){
+                        list2.add(life);
+                    }
+                }
+                adapter.setData(list2);
+                lifeSecondListview.setAdapter(adapter);
+
                 return false;
             }
 
             @Override
             public boolean onQueryTextChange(String s) {
                 //搜索框文本发生改变的时候执行
-                Log.i("dd", s);
-                if (s.equals("")) {
+                if(s.equals("")){
                     adapter.setData(list);
+                    lifeSecondListview.setAdapter(adapter);
                 }
                 return false;
             }
