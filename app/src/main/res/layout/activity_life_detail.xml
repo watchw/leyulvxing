@@ -64,7 +64,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginLeft="15dp"
                             android:gravity="center"
-                            android:text="¥89/人"
+                            android:text=""
                             android:textSize="14sp" />
                     </LinearLayout>
 

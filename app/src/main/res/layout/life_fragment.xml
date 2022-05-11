@@ -74,7 +74,7 @@
                     android:drawableTop="@mipmap/dianying"
                     android:drawablePadding="-15dp"
                     android:paddingTop="5dp"
-                    android:text="热映电影" />
+                    android:text="电影院" />
             </LinearLayout>
 
             <LinearLayout
@@ -155,7 +155,7 @@
                     android:drawableTop="@mipmap/chaoshi"
                     android:drawablePadding="-15dp"
                     android:paddingTop="5dp"
-                    android:text="超市" />
+                    android:text="商场" />
 
                 <Button
                     android:id="@+id/life_btn_yiyuan"

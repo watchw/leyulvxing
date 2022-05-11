@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -57,6 +58,7 @@ public class home_activity_one extends AppCompatActivity {
     };
     private SimpleAdapter simpleAdapter;
     private List<Map<String, Object>> list;
+    private EditText editText;
     private ListView listView;
 
     @Override

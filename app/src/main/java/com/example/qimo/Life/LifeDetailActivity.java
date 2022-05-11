@@ -58,6 +58,7 @@ public class LifeDetailActivity extends BaseActivity {
 
         imageView.setImageResource(life.img);
         titleTextView.setText(life.title);
+        String phone=phoneTextView.toString();
         if (null != life.detail) {
             detailTextView.setText(life.detail);
         }
@@ -106,7 +107,7 @@ public class LifeDetailActivity extends BaseActivity {
     }
 
     private void toPhone() {
-        String number = "18166327429";
+        String number = "02365010003";
         Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + number));
         startActivity(intent);
     }
