@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Promotion.activity_second">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/top_img"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/jfb5" />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_img"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_img"
+                    android:text="解放碑"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@mipmap/rili" />
+
+                    <TextView
+                        android:id="@+id/date_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="2022/4/24"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="-5dp"
+                        android:src="@mipmap/bendi" />
+
+                    <TextView
+                        android:id="@+id/address_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="重庆市渝中区解放碑周边区域"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/collection_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/shouchang" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l1"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <Gallery
+                android:id="@+id/gallery1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spacing="10dip" />
+
+            <ImageSwitcher
+                android:id="@+id/imageSwitcher1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"></ImageSwitcher>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/recommend_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="推荐分：5.0"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/activity_title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="活动介绍"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activity_detail_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="解放碑步行街是重庆较为繁华的商业圈，这里百货公司、酒店数量众多，是购物、美食和走走逛逛的好去处，更是打望重庆美女的好去处。步行街位于渝中区，以解放碑为中心，包括周边的民权路、邹容路和八一路等。\n
+商场多，小吃多，美女多，是步行街“三多”。你在这里可以逛逛“高大上”的美美时代百货、大都会广场，也有比较平民的重庆百货大楼和太平洋百货；在步行街上你几乎能吃到所有的重庆美食，这里有八一路好吃街，便宜又好吃的酸辣粉、山城小汤圆和抄手都能在这里找到。而当你步行街上闲逛时，没走几步，就会有一位身材高挑，皮肤白皙的重庆美眉从你身边闪过。\n
+作为重庆甚至是中国西部地区繁华的商业街，无论你是重庆本地人，还是来重庆的游客，在步行街都能找到属于自己的快乐。"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

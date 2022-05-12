@@ -189,9 +189,28 @@ public class ActivityFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Log.i("position", String.valueOf(position));
-                Intent intent = new Intent();
-                intent.setClass(getActivity(), activity_second.class);
-                startActivity(intent);
+                if (position == 0){
+                    Intent intent = new Intent();
+                    intent.setClass(getActivity(), activity_three.class);
+                    startActivity(intent);
+                }
+                else if (position == 1){
+                    Intent intent = new Intent();
+                    intent.setClass(getActivity(), activity_second.class);
+                    startActivity(intent);
+                }
+                else if (position == 2){
+                    Intent intent = new Intent();
+                    intent.setClass(getActivity(), activity_four.class);
+                    startActivity(intent);
+                }
+                else if (position == 3){
+                    Intent intent = new Intent();
+                    intent.setClass(getActivity(), activity_five.class);
+                    startActivity(intent);
+                }
+
+
             }
         });
     }

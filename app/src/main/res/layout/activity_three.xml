@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Promotion.activity_second">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/top_img"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/zzd3" />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_img"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_img"
+                    android:text="渣滓洞"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@mipmap/rili" />
+
+                    <TextView
+                        android:id="@+id/date_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="2022/3/24"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="-5dp"
+                        android:src="@mipmap/bendi" />
+
+                    <TextView
+                        android:id="@+id/address_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="重庆市沙坪坝区渣滓洞景区"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/collection_btn"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/shouchang" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l1"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <Gallery
+                android:id="@+id/gallery1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spacing="10dip" />
+
+            <ImageSwitcher
+                android:id="@+id/imageSwitcher1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"></ImageSwitcher>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/recommend_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="推荐分：4.8"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/activity_title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="活动介绍"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activity_detail_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="重庆的渣滓洞在重庆的西北角，原本是采煤的小煤窑，因为渣多煤少而得名。这里三面环山，一面临沟，地形比较隐蔽。1943年，军统特务将这里煤窑和矿工住房改造成为看守所。在70多年前这里算是挺偏僻的地方，离磁器口古镇很近。渣滓洞这个地方，在我们的记忆中不算陌生，小时候学习过课本《红岩》（作者罗广斌据说也关押过这里，后来成功越狱）的节选，里面有大家印象深刻的黄显声将军、小萝卜头等人物形象，重庆解放前夕，这里是著名的“11.27”惨案的发生地，牺牲了很多革命烈士。如今到渣滓洞就能找到当时的一点点感觉了。"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
